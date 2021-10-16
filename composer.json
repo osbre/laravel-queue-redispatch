@@ -6,6 +6,13 @@
             "Ostapbregin\\LaravelQueueRedispatch\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ostapbregin\\LaravelQueueRedispatch\\LaravelQueueRedispatchServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "Ostap Bregin",

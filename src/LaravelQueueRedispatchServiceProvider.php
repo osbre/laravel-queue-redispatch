@@ -1,12 +1,12 @@
 <?php
 
-namespace OstapBregin\LaravelQueueLoop;
+namespace OstapBregin\LaravelQueueRedispatch;
 
 use Illuminate\Queue\Events\JobProcessed;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\ServiceProvider;
 
-class LaravelQueueLoopServiceProvider extends ServiceProvider
+class LaravelQueueRedispatchServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {

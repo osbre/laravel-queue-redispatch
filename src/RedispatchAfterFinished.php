@@ -1,6 +1,6 @@
 <?php
 
-namespace OstapBregin\LaravelQueueLoop;
+namespace OstapBregin\LaravelQueueRedispatch;
 
 interface RedispatchAfterFinished
 {

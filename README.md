@@ -1,15 +1,21 @@
 ## Automatically re-dispatch queue job after it has been finished
 
-```php
-use OstapBregin\LaravelQueueLoop\RedispatchAfterFinished;
+## Introduction
 
-class ProceedNewNotionPostsJob implements ..., RedispatchAfterFinished
+
+
+## Usage
+
+```php
+use OstapBregin\LaravelQueueRedispatch\RedispatchAfterFinished;
+
+class CheckWebsiteUptime implements ..., RedispatchAfterFinished
 {
     ...
 
     public function redispatch(): bool
     {
-        return true;
+        return $this->website->monitoring_enabled;
     }
 
     ...
